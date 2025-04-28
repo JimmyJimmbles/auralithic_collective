@@ -1,0 +1,292 @@
+/* use # with id, use . with class */
+.topnav {
+  background-color: #050404e1;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: rgb(246, 245, 231);
+  text-align: center;
+  padding: 14px 36px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a.split {
+  float: left;
+}
+.topnav a.split:hover {
+  color:#9ff889;
+  text-shadow:0px 0px 300px #9ff889;
+  -moz-transition: all 0.6s ease-in;
+  -o-transition: all 0.6s ease-in;
+  -webkit-transition: all 0.6s ease-in;
+  transition: all 0.6s ease-in;
+  
+}
+
+.featured_artists{
+  width:80%;
+  margin:auto;
+  overflow:auto;
+}
+
+.featured_artists div{
+  width:33%;
+  margin:auto;
+  display:inline-block;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.row{
+  margin-left:2%;
+  margin-right:2%;
+}
+
+.column_unequal {
+  float: left;
+  padding: 10px;
+}
+
+.left {
+  width: 75%;
+}
+
+.right {
+  width: 25%;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.artist{
+  width:100%;
+  margin: auto;
+  background-color: #1a1a1a9c;
+
+}
+.artist p{
+  margin: 3%;
+}
+.auralithic{
+  width:100%;
+  height: 100%;
+  margin: auto;
+  background-image: url("ethereal_bg.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.profile_container{
+  width: 100%;
+  margin: auto;
+  background-color: #1a1a1a9c;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: #9ff889;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  color: #d59ceb;
+}
+body{
+    background-image: url("wallpaper.png");  
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: center;
+    background-size: cover;
+    margin: 0%;
+    padding: 0px;
+    height: 100vh;
+    overflow-y: scroll;
+    font-size: 100%;
+  }
+  a:link {
+    text-decoration: none;
+    font-family: "Tagesschrift";
+    font-weight: 900;
+    font-size: 1.4em;
+    color: #f7ffff;
+    text-shadow: 0.07em 0.07em 0.05em black;
+  }
+  a:visited {
+    font-family: "Tagesschrift";
+    font-weight: 900;
+    color: #f7ffff;
+    text-shadow: 0.07em 0.07em 0.05em black;
+  }
+  a:hover {
+    color:#9ff889;
+  }
+  a:active {
+    color:#d59ceb
+  }
+
+  p{
+
+    font-size: 1.4em;
+    color:rgb(246, 245, 231);
+    font-family: "Spectral", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+  }
+  h1{
+
+    font-size: 5em;
+    color:rgb(246, 245, 231);
+    margin-left: 2%;
+    font-family: "DM Serif Display", serif;
+    font-weight: 700;
+    font-style: normal;
+    
+  }
+  h2{
+
+    font-size: 4.5em;
+    margin-bottom: 1%;
+    color:rgb(246, 245, 231);
+    font-family: "DM Serif Display", serif;
+    font-weight: 700;
+    font-style: normal;
+    
+  }
+  h3{
+
+    font-size: 3.4em;
+    color:rgb(246, 245, 231);
+    font-family: "DM Serif Display", serif;
+    font-weight: 700;
+    font-style: normal;
+    
+  }
+   /* Style the list */
+ul.breadcrumb {
+  padding: 10px 26px;
+  list-style: none;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: .8em;
+  font-weight: 700;
+  color: #f7ffff;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #9ff889;
+  text-decoration: none;
+
+  font-size: 1em;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #d59ceb;
+  font-size: 1em;
+  text-decoration: underline;
+} 
+
+
+
+/* navigation bar */
+.tagesschrift-regular {
+  font-family: "Tagesschrift", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* headers */
+.dm-serif-display-regular {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* body */
+.spectral-regular {
+  font-family: "Spectral", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.spectral-regular-italic {
+  font-family: "Spectral", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+/*contact form*/
+ input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 6px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */;
+  font-family: "Spectral", serif;
+  
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #9ff889;
+  color: rgb(46, 42, 42);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Spectral", serif;
+  font-weight: 600;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #d59ceb;
+}
+
+/* Add a background color and some padding around the form */
+.form-container {
+  border-radius: 5px;
+  background-color: #242323df;
+  padding: 20px;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-bottom:30%;
+  width: 75%;
+
+  font-family: "Spectral", serif;
+} 
+
