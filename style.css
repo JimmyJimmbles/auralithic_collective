@@ -81,7 +81,7 @@
   width:100%;
   margin: auto;
   background-color: #1a1a1a9c;
-  height: 98vh;
+  padding: 0 16px;
 }
 .artist p{
   margin: 3%;
@@ -100,6 +100,7 @@
 
 .profile_container{
   width: 100%;
+  max-width: 1200px;
   margin: auto;
   background-color: #1a1a1a9c;
 }
@@ -306,4 +307,9 @@ input[type=submit]:hover {
 .footer p {
   padding: 0;
   margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin:0 auto;
 }
