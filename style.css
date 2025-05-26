@@ -27,16 +27,20 @@
 }
 
 .featured_artists{
-  width:80%;
-  margin:auto;
-  overflow:auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 32px; */
+  margin-bottom: 32px;
 }
 
-.featured_artists div{
-  width:33%;
-  margin:auto;
-  display:inline-block;
+.f_artist img {
+  width: 100%;
+  max-width: 350px;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -77,7 +81,7 @@
   width:100%;
   margin: auto;
   background-color: #1a1a1a9c;
-
+  height: 98vh;
 }
 .artist p{
   margin: 3%;
@@ -86,7 +90,7 @@
   width:100%;
   height: 100%;
   margin: auto;
-  background-image: url("ethereal_bg.png");
+  background-image: url("ethereal_auralithic.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -290,3 +294,16 @@ input[type=submit]:hover {
   font-family: "Spectral", serif;
 } 
 
+.text-center {
+  text-align: center;
+}
+
+.footer {
+  padding: 8px;
+  background-color: #050404e1;
+}
+
+.footer p {
+  padding: 0;
+  margin: 0;
+}
